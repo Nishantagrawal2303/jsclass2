@@ -195,16 +195,56 @@
 
 
 
-let x =(a) => {
-    console.log(a)
+// let x =(a) => {
+//     console.log(a)
+// }
+
+
+// console.log(x(4));
+
+
+
+// example of higher order function 
+
+// function first(){
+     
+//      let a=10;
+//      var b=20;
+
+//    return c=a+b;
+// }
+// function higherOF(first){
+
+    
+// return a+b;
+// }
+
+// console.log(higherOF(first));
+
+
+// yaha prr apn ne arguments pass kiye he
+
+function first(a,b){
+     
+   return c=a+b;
+}
+function second(a,b){
+     
+   return c=a-b;
+}
+function mul(a,b){
+     
+   return c=a*b;
 }
 
+function higherOF(subkuch){
+return subkuch(30,20);
 
-console.log(x(4));
+}
 
-
-
-
+console.log(higherOF(first));
+console.log(higherOF(second));
+console.log(higherOF(mul));
 
 
 
