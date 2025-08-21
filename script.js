@@ -224,39 +224,131 @@
 
 // yaha prr apn ne arguments pass kiye he
 
-function first(a,b){
+// function first(a,b){
      
-   return c=a+b;
-}
-function second(a,b){
+//    return c=a+b;
+// }
+// function second(a,b){
      
-   return c=a-b;
-}
-function mul(a,b){
+//    return c=a-b;
+// }
+// function mul(a,b){
      
-   return c=a*b;
+//    return c=a*b;
+// }
+
+// function higherOF(subkuch){
+// return subkuch(30,20);
+
+// }
+
+
+
+// console.log(higherOF(first));
+// console.log(higherOF(second));
+// console.log(higherOF(mul));
+
+
+
+//  number is even or not 
+
+
+
+alert("RAM RAM")
+
+
+
+
+function printEven(num){
+   for(let i=1;i<=num;i++){
+      if(num%2==0){
+         console.log("number is Even");
+      }
+      else{
+         console.log("number is not  even");
+      }
+   }
 }
 
-function higherOF(subkuch){
-return subkuch(30,20);
+printEven(11);
 
+
+
+
+function printTable(numm){
+   for(let i=1;i<=10;i++){
+      console.log(`${numm}` + "*" + `${i}` + "=" +  `${numm*i}`);
+   }
 }
 
-console.log(higherOF(first));
-console.log(higherOF(second));
-console.log(higherOF(mul));
+
+printTable(5)
 
 
 
+// check the numebr is prime or nottt 
+
+
+ let number=  10;
+ 
+
+ isPrime=true;
+
+if(number<=1){
+   isprime=false;
+}
+else{
+   for(let i=2;i<number;i++){
+      if(number%i==0){
+         isPrime=false;
+         break;
+      }
+   }
+}
+
+if(isPrime){
+  console.log( `${number} is prime number `);
+  }
+else{
+   console.log(` ${number}  number is not prime`);
+}
+
+
+// finonaccii seriessss
+
+
+function fibonacci(n) {
+  let a = 0, b = 1;
+
+  console.log(a); // pehla number
+  console.log(b); // dusra number
+
+  for (let i = 2; i < n; i++) {
+    let next = a + b;
+    console.log(next);
+    a = b;
+    b = next;
+  }
+}
+
+fibonacci(10); // pehle 10 numbers print karega
 
 
 
+// factorial numberr 
 
 
+function factorial(n) {
+  let result = 1;
 
+  for (let i = 1; i <= n; i++) {
+    result =result * i;
+  }
 
+  return result;
+}
 
-
+console.log(factorial(5)); // Output: 120
 
 
 
