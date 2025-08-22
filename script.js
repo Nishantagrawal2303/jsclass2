@@ -254,7 +254,7 @@
 
 
 
-alert("RAM RAM")
+// alert("RAM RAM")  
 
 
 
@@ -349,6 +349,57 @@ function factorial(n) {
 }
 
 console.log(factorial(5)); // Output: 120
+
+
+// reverse a number 
+
+let num = 12345;
+let reversed = 0;
+
+while (num > 0) {
+  let lastDigit = num % 10;        // last digit nikal lete he apn yaga se
+  reversed = reversed * 10 + lastDigit; // digit ko reverse me add kiya he 
+  num =  Math.floor( num / 10);      // last digit hata di
+}
+
+console.log(reversed); 
+
+
+
+
+
+function shyamu(){
+   let ramu={
+       age:21,
+       class:12,
+       address: "dont have  " ,
+        "E-id":102,
+        E_id:102,
+        21045: "nishant",
+        funch:function(a,b){
+       
+      //  return a+b;
+      }
+
+   }
+
+   return ramu;
+}
+
+   // console.log(shyamu());           
+//   console.log(shyamu().funch(2,3));
+
+console.log(shyamu().age);
+console.log(shyamu()["21045"]);
+ 
+  console.log(shyamu()["E-id"]);
+  console.log(shyamu().E_id);
+
+  
+
+  
+
+
 
 
 
